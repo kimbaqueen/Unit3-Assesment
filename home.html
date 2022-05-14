@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Homepage</title>
 	<link href="styles.css" rel="stylesheet">
 
 </head>
+
 <body>
 	<nav>
 		<ol>
-	        <li class="crumb"><a href="./home.html">Home</a></li>
-	        <li class="crumb"><a href="./profile.html">Profile</a></li>
-	        <li class="crumb"><a href="./about.html">About</a></li>
-	    </ol>
+			<li class="crumb"><a href="./home.html">Home</a></li>
+			<li class="crumb"><a href="./profile.html">Profile</a></li>
+			<li class="crumb"><a href="./about.html">About</a></li>
+			<li class="crumb"><a href="./neighborhood.html">Neighborhood</a></li>
+		</ol>
 	</nav>
 
 	<content>
 		<h1>Welcome to this little website.</h1>
-		<!-- insert hello world here -->
+		<p>Hello World</p>
+		<p>Welcome to my little website!<br>
+			<br>We appreciate your time:
 
-		<img src="https://pbs.twimg.com/profile_images/1267905793610772480/rks7KARB_400x400.jpg">
+		<ul>
+			<li>You is kind.</li>
+			<li>You is smart.</li>
+			<li>You is important.</li>
+		</ul>
+		Please use the form below to contact us with any questions.</p>
+
+		<img src="./_build/rubber-ducky.jpg" alt="ducky-logo" class="ducky" id="ducky">
 
 		<h2>Contact Us</h2>
 		<form id="contact">
@@ -26,7 +38,17 @@
 			<input type="text">
 
 			Message:
-			<input type="textarea">
+			<input type="textarea"><br>
+
+			How did you hear about us?
+			<div class="checkbox">
+				<input type="checkbox" name="google-referral" id="google">
+				<label for="google">Google</label>
+				<input type="checkbox" name="friend-referral" id="friend">
+				<label for="friend">a Friend</label>
+				<input type="checkbox" name="other-referral" id="other">
+				<label for="other">Other</label>
+			</div>
 
 			<input type="submit">
 
@@ -39,4 +61,5 @@
 	<script src="about.js"></script>
 
 </body>
+
 </html>
